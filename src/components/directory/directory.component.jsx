@@ -65,6 +65,7 @@ class Directory extends Component {
             key={section.id}
             title={section.title}
             imageUrl={section.imageUrl}
+            size={section.size}
           />
         ))}
       </div>
