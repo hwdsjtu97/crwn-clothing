@@ -43,25 +43,11 @@ class Directory extends Component {
     };
   }
 
-  componentWillMount() {}
-
-  componentDidMount() {}
-
-  componentWillReceiveProps(nextProps) {}
-
-  shouldComponentUpdate(nextProps, nextState) {}
-
-  componentWillUpdate(nextProps, nextState) {}
-
-  componentDidUpdate(prevProps, prevState) {}
-
-  componentWillUnmount() {}
-
   render() {
     return (
       <div className="directory-menu">
-        {this.state.sections.map(({ id, title, ...otherSectionProps }) => (
-          <MenuItem key={id} {...title} {...otherSectionProps} />
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <MenuItem key={id} {...otherSectionProps} />
         ))}
       </div>
     );
